@@ -1,0 +1,50 @@
+{
+  "hero": {
+    "src": "https://images.pexels.com/photos/8535599/pexels-photo-8535599.jpeg?auto=compress&cs=tinysrgb&w=1600",
+    "alt": "Illustrative licensed photo of children enjoying an art activity",
+    "position": "center 46%",
+    "source": "https://www.pexels.com/photo/kids-doing-artwork-8535599/"
+  },
+  "heroDetail": {
+    "src": "https://images.pexels.com/photos/8923963/pexels-photo-8923963.jpeg?auto=compress&cs=tinysrgb&w=740",
+    "alt": "Illustrative licensed photo of brightly colored wooden toys",
+    "position": "center 45%",
+    "source": "https://www.pexels.com/photo/wooden-colorful-toys-8923963/"
+  },
+  "about": {
+    "src": "https://images.pexels.com/photos/8535634/pexels-photo-8535634.jpeg?auto=compress&cs=tinysrgb&w=1200",
+    "alt": "Illustrative licensed photo of a colorful early learning classroom",
+    "position": "center center",
+    "source": "https://www.pexels.com/photo/an-empty-classroom-8535634/"
+  },
+  "infants": {
+    "src": "https://images.pexels.com/photos/8923958/pexels-photo-8923958.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "alt": "Illustrative licensed photo of early learning toys",
+    "position": "center 48%",
+    "source": "https://www.pexels.com/photo/educational-toys-on-a-shelf-8923958/"
+  },
+  "toddlers": {
+    "src": "https://images.pexels.com/photos/7780905/pexels-photo-7780905.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "alt": "Illustrative licensed photo of a child using a wooden puzzle",
+    "position": "center 55%",
+    "source": "https://www.pexels.com/photo/child-playing-with-toys-7780905/"
+  },
+  "preschool": {
+    "src": "https://images.pexels.com/photos/8535232/pexels-photo-8535232.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "alt": "Illustrative licensed photo of children playing with educational toys",
+    "position": "center center",
+    "source": "https://www.pexels.com/photo/kids-playing-with-educational-toys-in-school-8535232/"
+  },
+  "schoolAge": {
+    "src": "https://images.pexels.com/photos/8923154/pexels-photo-8923154.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "alt": "Illustrative licensed photo of a teacher guiding a classroom activity",
+    "position": "center center",
+    "source": "https://www.pexels.com/photo/a-teacher-teaching-in-the-classroom-8923154/"
+  },
+  "community": {
+    "src": "https://images.pexels.com/photos/8363040/pexels-photo-8363040.jpeg?auto=compress&cs=tinysrgb&w=1400",
+    "alt": "Illustrative licensed photo of preschoolers learning together",
+    "position": "center 45%",
+    "source": "https://www.pexels.com/photo/preschoolers-inside-a-classroom-8363040/"
+  }
+}

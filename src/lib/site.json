@@ -1,0 +1,25 @@
+{
+  "name": "Sunny Days Academy LLC",
+  "displayName": "Sunny Days Academy",
+  "licenseNumber": "K830058406",
+  "streetAddress": "125 S Scraper",
+  "city": "Vinita",
+  "state": "OK",
+  "postalCode": "74301",
+  "phoneDisplay": "(918) 256-1416",
+  "phoneHref": "+19182561416",
+  "email": "sunnydaysacademy2026@gmail.com",
+  "director": "Dana Brown",
+  "capacity": 75,
+  "starLevel": 1,
+  "hours": {
+    "weekdays": "6:00 AM – 5:30 PM",
+    "weekends": "Closed",
+    "opens": "06:00",
+    "closes": "17:30"
+  },
+  "providerUrl": "https://ccl.dhs.ok.gov/providers/K830058406",
+  "facebook": "https://www.facebook.com/profile.php?id=61595308566225",
+  "instagram": "",
+  "youtube": ""
+}

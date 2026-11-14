@@ -1,0 +1,33 @@
+{
+  "name": "sunny-days-academy-vinita",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "predev": "node scripts/generate-pages.mjs",
+    "dev": "vite --host 0.0.0.0",
+    "prebuild": "node scripts/generate-pages.mjs",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "typecheck": "tsc --noEmit",
+    "generate": "node scripts/generate-pages.mjs"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "1.170.31",
+    "framer-motion": "12.43.0",
+    "lucide-react": "0.462.0",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.15.0",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@vitejs/plugin-react-swc": "4.3.3",
+    "autoprefixer": "10.5.4",
+    "postcss": "8.5.26",
+    "tailwindcss": "3.4.19",
+    "typescript": "5.9.3",
+    "vite": "^8.3.8"
+  }
+}
