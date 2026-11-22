@@ -43,10 +43,18 @@ const navItems = [['/','Home'],['/programs','Programs'],['/about','Our center'],
 function header(s,route){
   const links=navItems.map(([p,name])=>`<a href="${pathFor(p)}" ${route===p?'aria-current="page"':''}>${name}</a>`).join('');
   return `<a class="skip-link" href="#main-content">Skip to content</a>
+  <style>
+    .site-header .brand-logo-image { height: 96px !important; width: auto !important; max-width: none !important; }
+    .site-footer .brand-logo-image { height: 82px !important; width: auto !important; max-width: 100% !important; }
+    @media (max-width: 700px) {
+      .site-header .brand-logo-image { height: 72px !important; }
+      .site-footer .brand-logo-image { height: 68px !important; }
+    }
+  </style>
   <header class="site-header">
     <div class="topline"><div class="container-wide topline-inner"><span><i class="tiny-dot"></i> VINITA, OKLAHOMA · YEAR-ROUND CHILD CARE</span><a href="tel:${e(s.phoneHref)}">${e(s.phoneDisplay)} <span aria-hidden="true">↗</span></a></div></div>
     <div class="container-wide nav-row">
-      <a class="brand" href="/" aria-label="Sunny Days Academy home">${sun}<span class="brand-label"><strong>sunny days<span class="sun-dot">.</span></strong><small>ACADEMY</small></span></a>
+      <a class="brand" href="/" aria-label="Sunny Days Academy home"><img class="brand-logo-image" src="/sunny-days-logo-transparent.png" alt="Sunny Days Academy" width="380" height="96" style="display:block;width:auto;height:96px;max-width:none;object-fit:contain" decoding="async" /></a>
       <nav class="desktop-nav" aria-label="Main navigation">${links}</nav>
       <div class="nav-actions"><a class="nav-button" href="/contact/">Let's connect ${chevron}</a>
       <details class="mobile-menu"><summary aria-label="Toggle navigation menu"><span></span><span></span><span></span></summary><nav aria-label="Mobile navigation">${links}<a class="mobile-call" href="tel:${e(s.phoneHref)}">Call ${e(s.phoneDisplay)}</a></nav></details></div>
@@ -54,7 +62,7 @@ function header(s,route){
   </header>`;
 }
 function footer(s){return `<footer class="site-footer"><div class="container-wide footer-main">
-  <div class="footer-intro"><a class="brand footer-brand" href="/">${sun}<span class="brand-label"><strong>sunny days<span class="sun-dot">.</span></strong><small>ACADEMY</small></span></a><p>Little days are full of possibilities. Find child care information for Sunny Days Academy in Vinita, Oklahoma.</p><div class="footer-social">${social(s)}</div></div>
+  <div class="footer-intro"><a class="brand footer-brand" href="/" aria-label="Sunny Days Academy home"><img class="brand-logo-image" src="/Sunny Days Academy Logo light.png" alt="Sunny Days Academy" width="330" height="82" style="display:block;width:auto;height:82px;max-width:100%;object-fit:contain" loading="lazy" decoding="async" /></a><p>Little days are full of possibilities. Find child care information for Sunny Days Academy in Vinita, Oklahoma.</p><div class="footer-social">${social(s)}</div></div>
   <div class="footer-col"><h2>Explore</h2>${navItems.map(([p,name])=>`<a href="${pathFor(p)}">${name}</a>`).join('')}</div>
   <div class="footer-col"><h2>Get in touch</h2><a href="tel:${e(s.phoneHref)}">${e(s.phoneDisplay)}</a><a class="footer-email" href="mailto:${e(s.email)}">${e(s.email)}</a><a href="${e(mapUrl(s))}" target="_blank" rel="noopener noreferrer">${e(s.streetAddress)}<br/>${e(s.city)}, ${e(s.state)} ${e(s.postalCode)}</a></div>
   <div class="footer-col"><h2>Hours</h2><span>Monday – Friday</span><strong>${e(s.hours.weekdays)}</strong><span>Saturday – Sunday</span><strong>Closed</strong></div>
